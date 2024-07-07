@@ -41,16 +41,16 @@
 
 .my-navbar{
     background-color: rgba(0, 0, 0, 0.9);
-    height: 90px;    
+    height: 90px;
 }
 
-.my-navbar .logo-svg-2 {
+.my-navbar .logo2 {
     fill: white;
+    width: auto;
     height: 75px;
-    transition: top 0.3s ease-in-out;
 }
 
-.my-navbar .logo-svg-2 :hover {
+.my-navbar .logo2 :hover {
     fill: var(--secondary);
 }
 
