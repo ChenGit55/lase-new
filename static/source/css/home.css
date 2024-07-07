@@ -1,0 +1,102 @@
+@import url('variables.css');
+@import url('animations.css');
+
+
+
+
+.home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-page {
+    overflow: hidden;
+    position: fixed;
+    background-color: var(--tertiary);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; 
+    transition: opacity 0.5s ease; 
+}
+
+.hide-cover-page {
+    opacity: 0;
+    pointer-events: none; /* Impede interações com a cover page invisível */
+}
+
+
+.logo-container {   
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.cover-page .logo-svg-2 {
+    width: auto;
+    height: 500px;
+    fill: var(--secondary);
+}
+
+.paralax00{    
+    background-image: url('../img/team.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hidden-content1{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--tertiary);    
+}
+
+
+.team-img {
+    transition: opacity 0.5s ease;
+}
+
+.cover-page:not(:empty) + .hidden-content1 .team-img {
+    opacity: 1; /* Fica visível */
+}
+
+.paralax01-text {
+    background-color: var(--quaternary);
+    height: 30vh;
+}
+
+.paralax01 h1{
+    visibility: hidden;
+}
+
+.home-carousel {
+    width: 70vw;
+}
+
+.paralax01{
+    background-image: url('../img/coach.JPG');
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.paralax02{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
