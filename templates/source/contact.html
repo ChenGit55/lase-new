@@ -11,7 +11,7 @@
     </div>
     <div class="form-group">
         <label for="input-msg">Message</label>
-        <textarea class="form-control" id="input-msg" name="msg" rows="3"></textarea>
+        <textarea class="form-control" id="input-msg" name="msg" rows="3" required></textarea>
     </div>
     <div class="form-group justify-content-center d-flex">
         <button type="button" class="btn my-btn" id="my-btn">SEND</button>
@@ -24,17 +24,51 @@
 </div>
 
 <script>
+    
     const contactForm = document.getElementById('contact-form');
     const successMsg = document.getElementById('success-message');
     const submitBtn = document.getElementById('my-btn');
 
-    submitBtn.addEventListener('click', function() {
-    if (contactForm.style.display === 'none') {
-        contactForm.style.display = 'inline-flex';
-        successMsg.style.display = 'none';
-    } else {
-        contactForm.style.display = 'none';
-        successMsg.style.display = 'inline-flex';
-    }
-});    
+    submitBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById('input-name').value;
+        const email = document.getElementById('input-email').value;
+        const msg = document.getElementById('input-msg').value;
+
+        if (name && email && msg){
+
+        // display success msg when send a contact msg  
+            if (contactForm.style.display === 'none') {
+                contactForm.style.display = 'inline-flex';
+                successMsg.style.display = 'none';
+            } else {
+                contactForm.style.display = 'none';
+                successMsg.style.display = 'inline-flex';
+            }
+
+        // send msg block
+            fetch('{% url "contact" %}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}' 
+                },
+                body: new URLSearchParams({
+                    'name': name,
+                    'email': email,
+                    'msg': msg,
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('contactForm').style.display = 'none';
+                // document.getElementById('responseMessage').textContent = data.message;
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        } else {
+        }   
+    });
 </script>
