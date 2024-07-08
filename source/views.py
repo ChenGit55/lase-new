@@ -12,6 +12,7 @@ def contact_view(request):
         name = request.POST.get("name")
         email = request.POST.get("email")
         msg = request.POST.get("msg")
+
         send_mail(
             subject=f"Contact message from {name} - {email}, sent by web site.",
             message=msg,
