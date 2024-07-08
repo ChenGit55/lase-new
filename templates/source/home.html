@@ -11,7 +11,8 @@
 			<svg class="logo-svg-2"  xml:space="preserve" viewBox="0 0 217.9438324 162.3397827">
 				<use  xlink:href="{% static 'source/img/logo-grafite.svg' %}#art"></use>
 			</svg>
-		</div>		
+		</div>	
+		<h2>BRAZILIAN SOCCER TEACHING METHODOLOGY</h2>	
 	</section>
 	<div class="hidden-content1">
 		<!-- <h1>Your journey is just beginning!</h1> -->
@@ -81,31 +82,7 @@
 
 </script>
 
-<script>
-		window.addEventListener('scroll', function() {
-        var coverPage = document.querySelector('.cover-page')
-		var isCoverPageHidden = localStorage.getItem('coverPageHidden')
-
-
-		if (document.documentElement.scrollTop === 0 || document.body.scrollTop === 0) {
-            if (isCoverPageHidden !== 'true') {
-                coverPage.classList.add('hide-cover-page');
-            }
-        }
-
-		if (isCoverPageHidden === 'true') {
-            coverPage.classList.add('hide-cover-page');				
-        }
-		
-		window.addEventListener('scroll', function() {
-            if (window.scrollY > 0 && isCoverPageHidden !== 'true') {
-                coverPage.classList.add('hide-cover-page');
-                localStorage.setItem('coverPageHidden', 'true'); 
-            }
-        })
-       
-    })
-    
+<script>    
 </script>
 
 

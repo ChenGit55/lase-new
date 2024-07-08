@@ -69,7 +69,7 @@
     flex-direction: column;
     width: 100%;
     height: 70vh;
-    background-color: var(--quaternary);
+    background-color: rgb(50, 50, 50);
     align-items: center;
     justify-content: center;
 }
