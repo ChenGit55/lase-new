@@ -74,6 +74,16 @@
     justify-content: center;
 }
 
+#success-message{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    height: 70vh;
+    background-color: var(--quaternary);
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-form input{
     height: 50px;
 }
