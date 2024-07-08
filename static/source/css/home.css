@@ -87,7 +87,7 @@
 }
 
 .paralax01{
-    background-image: url('../img/coach.JPG');
+    background-image: url('../img/kids.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@
     align-items: center;
     flex-direction: column;
     
-    background-image: url('../img/coach.JPG');
+    background-image: url('../img/kids.jpg');
     height: 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
