@@ -102,7 +102,7 @@
 
 body {
     background-attachment: fixed;    
-    background-color: var(--tertiary);
+    background-color: var(--primary);
     background-position: center;
     color: var(--tertiary);
     font-family: 'Montserrat',sans-serif; 
