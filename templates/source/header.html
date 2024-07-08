@@ -1,15 +1,16 @@
 {% load static %}
-<nav class="navbar fixed-top navbar-expand-lg px-5 my-navbar" id="navbar">
-	<div class="container-fluid">
 
+<nav class="navbar fixed-top navbar-expand-lg px-5 my-navbar" id="navbar">
+	<div class="container">
+		
 		<!-- Logo -->
-		<a class="navbar-brand" href="{% url 'home' %}">
+		<a class="navbar-brand d-flex mx-auto justify-content-center fixed-top " href="{% url 'home' %}">
 			<img src="{% static 'source/img/lase-logo.svg' %}" class="logo-svg-1" alt="Logo" hidden>			
 			<svg class="logo2"  xml:space="preserve" viewBox="0 0 217.9 162.3">
 				<use  xlink:href="{% static 'source/img/logo-grafite.svg' %}#art"></use>
 			</svg>
 		</a>
-
+				
 		<!-- Toggle button -->
 		<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>

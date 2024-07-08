@@ -44,20 +44,24 @@
     height: 90px;
 }
 
-.my-navbar .logo2 {
+.logo2 {
     fill: white;
     width: auto;
     height: 75px;
 }
 
-.my-navbar .logo2 :hover {
+.logo2 :hover {
     fill: var(--secondary);
 }
 
-.my-navbar .logo-svg-1 {
+.logo-svg-1 {
     height: 75px;
 }
 
 .container-fluid{
     flex-direction: row-reverse;
+}
+
+.navbar-brand{
+    width: fit-content;
 }
