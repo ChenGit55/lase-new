@@ -1,12 +1,14 @@
 from django.shortcuts import render
 from django.core.mail import send_mail
 from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
 
 
 def home_view(request):
     return render(request, "home.html", context={})
 
 
+@csrf_exempt
 def contact_view(request):
     if request.method == "POST":
         name = request.POST.get("name")
