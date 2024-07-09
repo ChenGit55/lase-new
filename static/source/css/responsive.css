@@ -20,6 +20,7 @@
     .home-carousel{
         height: 50vh;
     }
+
     .home-carousel .carousel{
         width: 300px;
     }
@@ -28,7 +29,7 @@
         height: 50vh;
     }
     /* home */
-
+   
     /* footer */
     .copyright{
         flex-direction: column-reverse;
@@ -51,6 +52,32 @@
         background-image: url(
     "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
+
+    
+    /* about us */
+
+    .logo-head{
+        width: 200px;
+        right: calc(50% - 100px);
+        align-self: flex-start;
+    }
+
+    .about-section1 {
+        flex-direction: column;
+        overflow: auto;
+    }
+    .about-section1 p {
+        width: auto;
+    }
+
+    .about-section1 ::after{
+        padding-bottom: 20px;
+    }
+
+    .coach-back{
+        display: none;
+    }
+    /* about us */
 }
 
 /* only-larger devices */
@@ -59,5 +86,12 @@
     h1 {
         font-weight: 900;
         font-size: 3em;
+    }
+
+    /* about us  */
+    
+    .about-section1 .logo-head{
+        width: 200px;
+        position: absolute;
     }
 }

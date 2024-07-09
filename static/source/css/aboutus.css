@@ -1,13 +1,28 @@
+.logo-head{
+    width: 200px;
+    right: calc(50% - 100px);
+    align-self: flex-start;
+}
+
 .about-section1{
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    margin-top: 200px;
 }
 
-.coach-back{
-    height: 80vh;
-    margin-left: 60%;
-    align-self: self-end;
+.about-section1 article{
+    height: 50vh;
+    margin: 20px 10%;
+}
+
+.about-section1 article p{
+    width: 85%;
+}
+.coach-back{    
+    width: 700px;
     position: absolute;
+    right: 0;
+    bottom: auto;
+    align-self: flex-end;
 }
