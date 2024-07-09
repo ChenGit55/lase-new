@@ -1,8 +1,7 @@
 {% load static %}
 
-<nav class="navbar fixed-top navbar-expand-lg px-5 my-navbar" id="navbar">
-	<div class="container">
-		
+<nav class="navbar fixed-top navbar-expand-lg bg-dark my-navbar" id="navbar">
+	<div class="container-fluid">		
 		<!-- Logo -->
 		<a class="navbar-brand d-flex mx-auto justify-content-center fixed-top " href="{% url 'home' %}">
 			<img src="{% static 'source/img/lase-logo.svg' %}" class="logo-svg-1" alt="Logo" hidden>			
@@ -12,13 +11,16 @@
 		</a>
 				
 		<!-- Toggle button -->
-		<button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler collapsed custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<!-- Menu -->
-		<div class="collapse navbar-collapse " id="navbarSupportedContent">
-			<ul class="navbar-nav ">				
+		<div class="navbar-collapse collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">HOME</a>
+				</li>		
 				<li class="nav-item">
 					<a class="nav-link" href="#">SOCCER TRAINING</a>
 				</li>

@@ -1,6 +1,10 @@
 :root {
-    --primary: black;
+    --primary: rgb(0, 0, 0);
     --secondary: rgb(212, 149, 41);
-    --tertiary: #ffffff;
-    --quaternary: #062957;
+    --tertiary: rgb(255, 255, 255);
+    --quaternary: rgb(6, 41, 87);
+}
+
+.bg-dark{
+    background-color: var(--primary) !important;
 }
