@@ -1,0 +1,17 @@
+.camp-section00{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camp-form{
+    width: 100%;
+}
+
+.agreement-text-box{
+    height: 200px;
+    overflow: auto;
+    color: var(--primary);
+    background-color: var(--tertiary);
+}

@@ -4,9 +4,107 @@
 {% block content %}
 <main>
     <!-- section -->
+    <section class="camp-section00">
+        <form class="camp-form d-flex justify-content-center flex-column " action="." method="POST">
+            <h1 style="text-align: center;">Sign up here</h1>
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="child-name">Child Name</label>
+                <input type="text " class="form-control" id="child-name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input class="form-control" type="date" name="dob" id="dob">
+            </div>
+            <div class="form-group">
+                <label for="inputState">Training</label>
+                <select id="inputState" class="form-control" aria-placeholder="Choose">
+                    <option>Beach Soocer</option>
+                    <option>Futsal</option>
+                    <option>Private Camp</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone-name">Phone Nuber</label>
+                <input type="text " class="form-control" id="phone-name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <label for="parent-name">Parent Name</label>
+                <input type="text " class="form-control" id="parent-name" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <a class="btn my-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Policy Agreement
+                </a>
+                <div class="collapse" id="collapseExample">
+                    <div class="card p-2 mt-2 agreement-text-box">
+                        ENROLLMENT AGREEMENT
 
+                        I, the parent/guardian, certify that I am of lawful age. I hereby agree to allow my child, the Participant, to participate in the activities described below provided by Los Angeles Soccer Evolution. In consideration of the above statement, employees, agents, assigns, legal representatives and successors from all manner of actions, causes of action, debts, accounts, bonds, contracts, claims and demands for or by reason of any injury to person or property, including injury resulting in the death of the Participant, which has been or may sustained as a consequence of the Participant's participation in the activity described below, and not withstanding that such damage, loss or injury may have been caused solely or partly by the negligence of the Activity Provider.
+
+                        The Parent/Guardian understands that the Participant would not be permitted to participate in the activity described below unless the Parent/Guardian signed this Agreement.
+
+                        The Participant will participate in the following activities: Youth Soccer Program: Soccer training (physical, technical, conditioning, agility and coordination). Individual training, soccer camps and clinics.
+
+                        I understand and agree that Los Angeles Soccer Evolution has the right to terminate enrollment of any child from Los Angeles Soccer Evolution if it, in its sole discretion, determines that the continued attendance of the child in the program is not in the best interest of the child or the program. I agree to supervise or designate a responsible adult to supervise my child prior to and immediately after his/her Los Angeles Soccer Evolution activities. If my child is under the age of 3, I understand that I must remain in the immediate vicinity of the class at all times. I understand and agree that in case of an allergic reaction, I am solely responsible for attending to and treating my child. Los Angeles Soccer Evolution coaches are not authorized to administer medication or EpiPens.
+
+                        The Parents/Guardian acknowledges that the Participant does not have any physical limitations, medical aliments, physical or mental disabilities that wold limit or prevent the Participant from participating in the above mentioned activity. If required, the Participant will obtain a medical examination and clearance.
+
+                        The Parent/Guardian hereby acknowledges and agrees that the Parent/Guardian has carefully read this Agreement, that the Parent/Guardian fully understands the same, and that the Parent/Guardian is freely and voluntarily executing the same.
+
+                        The Parent/Guardian understands that by signing this Agreement, the Parent/Guardian agrees to be forever prevented from suing or otherwise claiming against the Activity Provider for any property loss or personal injury that the Participant may sustain while participating in or preparing for the above noted activity.
+
+                        The Parent/Guardian has been given the opportunity and has been encouraged to seek independent legal advice prior to signing this Agreement.
+
+                        In the event of inclement weather, classes may be canceled, in case the weather changes during the classes, camp or any activity conducted by Los Angeles Soccer Evolution will be canceled. All students will be asked to leave the field to the designated shelter area. Classes will be postpone to further date after the session is over. 
+
+                        This Agreement contains the entire agreement between the parties to this Agreement and the terms of this Agreement are contractual and not a mere recital. This Agreement will be construed in accordance with and governed by the laws of the State of California.
+
+
+                        PAYMENT AND REFUND
+
+                        No refund will be given unless a written notice is provided 5 business days before the first day of activities begins.
+
+
+                        SOCIAL MEDIA
+
+                        I, on behalf of my participating child consent that the photographs, artwork, audio, video, or writing that is documented may be used by LA Soccer Evolution, its assigns or successors, in whatever way they desire, including television, CD's, Social Media, web page, publication, and any other form for the storage, retrieval and reproduction of information, images; furthermore, I hereby consent that such information, photographs, videos, and the plates and/or tapes from which they are made shall be their property, and they shall have the right to sell, duplicate reproduce and make other uses of such information, photographs, videos, recordings, and plates as they may desire free and clear of any claim whatsoever on my part.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="agreement-check">
+                  <label class="form-check-label" for="agreement-check">
+                    I acknowledge I have read and acept all enrollment conditions.
+                  </label>
+                </div>
+            </div>
+            <div class="form-group d-flex">
+                <button type="button" class="btn my-btn mx-auto" id="camp-submit-btn" disabled>Submit</button>
+            </div>
+        </form>
+    </section>  
 </main>	
 {% endblock content %}
 {% block script %}
+
+<script>
+    checkbox = window.document.getElementById('agreement-check')
+    btn = window.document.getElementById('camp-submit-btn')
+    
+    checkbox.addEventListener('change', function(){
+    if (checkbox.checked){
+        btn.disabled = false;
+    } else {
+        btn.disabled = true;
+    }
+    })
+
+</script>
 
 {% endblock script %}
