@@ -69,6 +69,10 @@
     flex-direction: column;
 }
 
+.carousel{
+    width: 1000px;
+}
+
 .paralax01{
     background-image: url('../img/kids.jpg');
     height: 100vh;
