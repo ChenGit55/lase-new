@@ -1,6 +1,29 @@
 /* smartphones */
 
 @media (max-width: 480px){
+    h1 {
+        font-weight: 500;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 1em;
+    }
+
+    /* home */
+    .home-carousel{
+        height: 50vh;
+    }
+    .home-carousel .carousel{
+        width: 300px;
+    }
+
+    .paralax.bg{
+        height: 50vh;
+    }
+    /* home */
     
 }
 
@@ -22,5 +45,8 @@
 /* only-larger devices */
 
 @media (min-width: 992px) {
-
+    h1 {
+        font-weight: 900;
+        font-size: 3em;
+    }
 }
