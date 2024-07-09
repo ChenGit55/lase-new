@@ -12,6 +12,10 @@
         font-size: 1em;
     }
 
+    .form-group{
+        width: 80%;
+    }
+
     /* home */
     .home-carousel{
         height: 50vh;
@@ -24,6 +28,13 @@
         height: 50vh;
     }
     /* home */
+
+    /* footer */
+    .copyright{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    /* footer */
     
 }
 
