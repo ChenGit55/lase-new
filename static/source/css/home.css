@@ -9,25 +9,17 @@
     background-color: rgb(0, 0, 0,0.5);
 }
 
-
-
-.hide-cover-page {
-    opacity: 0;
-    pointer-events: none; /* Impede interações com a cover page invisível */
+.cover-page .logo-svg-2 {
+    width: auto;
+    height: 500px;
+    fill: var(--tertiary);
 }
-
 
 .logo-container {   
     display: inline-flex;
     text-align: center;
     justify-content: center;
     width: 100vw;
-}
-
-.cover-page .logo-svg-2 {
-    width: auto;
-    height: 500px;
-    fill: var(--tertiary);
 }
 
 .paralax00{    
@@ -37,24 +29,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-.hidden-content1{   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: var(--tertiary);    
-}
 
 .paralax01-text {
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
+}
+
+
+.paralax01{
+    background-image: url('../img/kids.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .paralax01 h1{
@@ -73,21 +64,12 @@
     width: 1000px;
 }
 
-.paralax01{
-    background-image: url('../img/kids.jpg');
-    height: 100vh;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
 
 .paralax02{    
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
     background-image: url('../img/kids.jpg');
     height: 100vh;
     background-attachment: fixed;

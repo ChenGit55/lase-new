@@ -1,29 +1,10 @@
-@import url('variables.css');
-
-.dropdown-menu {
-    background-color: var(--primary);
+.my-navbar{
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 90px;
 }
 
-.login-nav {
-    display: flex;
-    background-color: var(--secondary);
-    height: auto;
-    align-items: center;
-}
-
-.login-nav a {
-    color: var(--tertiary);
-}
-
-.login {
-    font-size: small;
-    height: fit-content;
-    color: var(--tertiary);
-}
-
-.user-icon {
-    width: 30px;
-    height: auto;
+.my-navbar .container{
+    transition: top 0.3s ease-in-out;
 }
 
 .my-navbar a{
@@ -35,13 +16,8 @@
     color: var(--secondary);
 }
 
-.my-navbar .container{
-    transition: top 0.3s ease-in-out;
-}
-
-.my-navbar{
-    background-color: rgba(0, 0, 0, 0.9);
-    height: 90px;
+.navbar-brand{
+    width: fit-content;
 }
 
 .logo2 {
@@ -58,10 +34,4 @@
     height: 75px;
 }
 
-.container-fluid{
-    flex-direction: row-reverse;
-}
 
-.navbar-brand{
-    width: fit-content;
-}
