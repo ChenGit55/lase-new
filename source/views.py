@@ -33,3 +33,15 @@ def contact_view(request):
 
 def about_us_view(request):
     return render(request, "aboutus.html")
+
+
+def soccer_training_view(request):
+    return render(request, "soccer-training.html")
+
+
+def camps_view(request):
+    return render(request, "camps.html")
+
+
+def schools_view(request):
+    return render(request, "schools.html")
